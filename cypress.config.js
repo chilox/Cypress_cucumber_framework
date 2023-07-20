@@ -19,6 +19,7 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+  projectId: "pq5tn1",
   e2e: {
     specPattern: "**/*.feature",
     setupNodeEvents,

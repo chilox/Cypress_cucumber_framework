@@ -1,4 +1,5 @@
 pipeline{
+    agent any
 
    tools {nodejs "node"} 
 
@@ -6,7 +7,7 @@ pipeline{
 
     stage('Cypress Test Suite'){
         parallel {
-            stage('slave 1'){
+            stage('Slave 1'){
                 agent {
                     label "nodo1"
                 }
@@ -18,7 +19,7 @@ pipeline{
                 }
             }
 
-            stage('slave 2'){
+            stage('Slave 2'){
                 agent {
                     label "nodo2"
                 }
